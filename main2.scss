@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.page-back {
+  width: 120%;
+  height: 120%;
+  left: -10%;
+  top: -10%;
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("earth.jpg");
+  background-size: cover;
+  background-position: center;
+  // -webkit-filter: blur(3px);
+}
+.header {
+  font-size: 100px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: white;
+  font-weight: 300;
+  font-family: "Quicksand";
+  transform: translate(-50%, -30%);
+  width: max-content;
+}
+.text {
+  font-size: 40px;
+  color: white;
+  font-family: "Cairo";
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  text-align: center;
+}

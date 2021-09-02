@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>8th Anniversary</title>
+    <link rel="stylesheet" href="main2.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-back"></div>
+      <h1 class="header">8th Anniversary</h1>
+      <p class="text">
+        كل شهر و انت قلبى و عقلى و كل شيء املك فى هذه الدنيا اوعدك اننا سنبقا
+        معا حتى تحترق النجوم
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      $(".container").mousemove(function (event) {
+        var moveX = ($(window).width() / 2 - event.pageX) * 0.1;
+        var moveY = ($(window).height() / 2 - event.pageY) * 0.1;
+        $(".page-back").css("margin-left", moveX + "px");
+        $(".page-back").css("margin-top", moveY + "px");
+      });
+    </script>
+  </body>
+</html>
